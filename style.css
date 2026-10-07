@@ -1,0 +1,607 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 2px;
+        display: block;
+        flex-direction: row;
+
+        
+        
+    }
+   
+}
+
+:root{
+    transition:  var(--cor-fundo) 1.5s;
+    --cor-fundo: #1A1919;
+    --cor-texto: #fff;
+    --cor-detalhes: #535353;
+    --tamanho: scale(1.0);
+
+}
+
+.aumentar{
+    --verde: #00AB75;
+    --azul: #00ACC6;
+    --roxo: #6007E6;
+    --rosa: #F84B7C;
+    --laranja: #FFA321; 
+    --tamanho: scale(1.3);
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    min-height: 300vh;
+    transition: 1.5s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+   
+}
+body section{
+    width: 85%;
+    margin-left: 15%;
+   
+}
+
+body.claro{
+    transition: 1.5s;
+    --cor-fundo: #ffffff;
+    --cor-texto: #000000;
+    --cor-detalhes: #535353;
+}
+
+.Cabeçario{
+    background-color: #535353;
+    width: 10vh;
+    height: 70vh;
+    border-radius: 20px;
+    align-content: center;
+    justify-items: center;
+    margin-left: 8vh;
+    margin-top: 15vh;
+    position: fixed;
+   
+}
+
+.Cabeçario ul{
+    list-style-type: none;
+    gap: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Cabeçario li{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cabeçario a{
+    width: 40px;
+    height: 40px;
+}
+
+.Cabeçario svg{
+    width: 40px;
+    height: 40px;
+}
+
+#sol.claro path {
+    fill: rgb(255, 255, 121);
+}
+
+#Inicio{
+    animation: vir 2s linear 1s ;
+}
+
+@keyframes vir {
+    
+    from{
+        transform: translateX(-100px);
+    opacity: 0;}
+
+    to{transform: translateX(0px);
+    opacity: 1;}
+
+}
+
+#LI_Inicio{
+    background-color: var(--laranja);
+    transform: var(--tamanho);
+    transition: 0.5s;
+    border-radius: 50px;
+    cursor: pointer;
+   
+}
+#LI_Inicio:hover{
+    background-color: orange;
+      transform: scale(1.5);
+      transition: 0.5s;
+      border-radius: 50px;
+}
+
+
+     
+
+#Inicio{
+    height: 120vh;
+   
+    padding: 50px;
+    font-size: 45px;
+    padding-top: 20vh;
+}
+#Inicio span{
+    color: #FFA321;
+}
+
+#Inicio button{
+    display: flex;
+    background-color: #FFA321;
+    width: 35vh;
+    height: 8vh;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 40px;
+    border-color: #FFA321;
+    align-items: center;
+   justify-content: center;
+}
+
+#Inicio button svg{
+  width: 4vh;
+  padding-left: 15px;
+ 
+}
+#Inicio button a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+#Sobre{
+    animation: vir 2s linear 1s ;
+}
+
+@keyframes vir {
+    
+    from{
+        transform: translateX(-100px);
+    opacity: 0;}
+
+    to{transform: translateX(0px);
+    opacity: 1;}
+
+}
+
+#Sobre{
+    height: 120vh;
+   
+    padding: 50px;
+    font-size: 38px;
+    padding-top: 10vh;
+}
+#Sobre span{
+    color: #F84B7C;
+}
+#LI_Sobre{
+    background-color: var(--rosa);
+    transform: var(--tamanho);
+    transition: 0.5s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#LI_Sobre:hover{
+      background-color: #F84B7C;
+      transform: scale(1.5);
+      transition: 0.5s;
+      border-radius: 50px;
+     
+}
+
+#orgQualidades{
+    display: flex;
+    gap: 32px;
+   text-align: center;
+   font-size: 25px;
+}
+
+#orgQualidades div{
+   border: solid;
+    border-color: #F84B7C;
+    border-radius: 40px;
+    width: 28vh;
+    height: 6vh;
+    align-content: center;
+}
+
+#Habilidades{
+    animation: vir 2s linear 1s ;
+}
+
+@keyframes vir {
+    
+    from{
+        transform: translateX(-100px);
+    opacity: 0;}
+
+    to{transform: translateX(0px);
+    opacity: 1;}
+
+}
+
+#Habilidades{
+    padding-top: 10vh;
+    height: 120vh;
+    
+
+}
+
+#Habilidades span{
+    color: #6007E6;
+}
+#LI_Habilidades{
+    background-color: var(--roxo);
+    transform: var(--tamanho);
+    transition: 0.5s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#LI_Habilidades:hover{
+      background-color: #6007E6;
+      transform: scale(1.5);
+      transition: 0.5s;
+      border-radius: 50px;
+     
+}
+
+#orgLinguagens{
+    border: solid;
+    border-color: #535353;
+    border-radius: 10px;
+    width: 80%;
+    height: 60vh;
+    margin-left: 5%;
+   display: flex;
+   flex-direction: column;
+}
+
+#Linguagens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 25px;
+}
+
+#Linguagens div{
+    border: solid;
+    border-color: #535353;
+    border-radius: 10px;
+    width: 22%;
+    height: 25vh;
+    font-size: 20px;
+    padding-left: 20px;
+    
+}
+
+#Linguagens div p{
+     padding-bottom: 25px;
+}
+#Linguagens div img{
+    padding-top: 12px;
+}
+
+#titleLinguagens{
+    font-weight: 800;
+}
+
+#nivel{
+    border: solid;
+    border-color: #6007E6;
+    border-radius: 40px;
+    width: 20vh;
+    height: 32px;
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+    
+}
+
+#tamanhoP{
+    font-size: 25px;
+}
+
+#Projetos{
+    animation: vir 2s linear 1s ;
+}
+
+@keyframes vir {
+    
+    from{
+        transform: translateX(-100px);
+    opacity: 0;}
+
+    to{transform: translateX(0px);
+    opacity: 1;}
+
+}
+
+#Projetos{
+    padding-top: 10vh;
+    height: 120vh;
+   
+}
+#LI_Projetos{
+    background-color: var(--azul);
+    
+    transition: 0.5s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#LI_Projetos:hover{
+      background-color: #00ACC6;
+      transform: scale(1.5);
+      transition: 0.5s;
+      border-radius: 50px;
+     
+}
+
+#Projetos span{
+    color: #00ACC6;
+}
+
+/*  */
+
+#pastaProjetos{
+   justify-items: center;
+    width: 35vh;
+    height: 42vh;
+    border: #00abc662 solid;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+#pastaProjetos p{
+    padding: 5px;
+    font-size: 12px;
+}
+#pastaProjetos span{
+   font-weight: 800;
+}
+
+#pastaProjetos a{
+ color: #fff;
+ text-decoration: none;
+ 
+}
+
+#pastaProjetos:first-child{
+    margin-left: 10vh;
+}
+#imgProjetos{
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 150px;
+}
+#imgProjetos img{
+    width: 100%;
+    height: auto;
+}
+#btnlinguagens{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    font-size: 14PX;
+    color: #00ACC6;
+}
+
+#www{
+    font-weight: 700;
+}
+#btnlinguagens div{
+    border: #00ACC6 solid 2px;
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    align-content: center;
+}
+
+#linha{
+    width: 250px;
+    border: none;          
+    height: 2px;           
+     background-color: #00abc662;
+} 
+
+#ORGprojetos{
+    margin-top: 5vh;
+    display: flex;
+    gap: 80px;
+}
+
+
+#Git{
+    border: solid #00ACC6 2px;
+    border-radius: 40px;
+    width: 60vh;
+    height: 10vh;
+    align-content: center;
+    margin-top: 10vh;
+}
+
+#Git a{
+    color: #fff;
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#svgGit{
+    width: 90px;
+    padding-left: 20px;
+}
+
+#setinha{
+    width: 100px;
+    padding-left: 60px;
+}
+
+p #marcador{
+    color: #fff;
+    font-weight: 700;
+}
+
+/*  */
+
+#Contato{
+    animation: vir 2s linear 1s ;
+}
+
+@keyframes vir {
+    
+    from{
+        transform: translateX(-100px);
+    opacity: 0;}
+
+    to{transform: translateX(0px);
+    opacity: 1;}
+
+}
+
+#Contato{
+    height: 120vh;
+  
+    padding-top: 10vh;
+
+}
+#LI_Contato{
+    background-color: var(--verde);
+    transition: 0.5s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#LI_Contato:hover{
+      background-color: #00AB75;
+      transform: scale(1.5);;
+      transition: 0.5s;
+      border-radius: 50px;
+     
+}
+
+#Contato span{
+    color: #00AB75;
+}
+
+#Contato p{
+    font-size: 30px;
+}
+#orgContato{
+    display: flex;
+    
+}
+#orgContato div{
+    display: flex;
+    
+}
+#orgContato div:first-child{
+     margin-right: 25vh;
+}
+
+#orgContato div p{
+    align-content: center;
+    padding-left: 20px;
+}
+
+#orgContato svg{
+    width: 50px;
+   
+}
+
+#Formulario{
+    border: solid;
+    border-color: #00AB75;
+    border-radius: 10px;
+    width: 80%;
+    height: 40vh;
+    padding: 40px;
+}
+
+
+
+#Formulario label{
+    font-size: 20px;
+}
+
+
+
+#Formulario input{
+    width: 550px;
+    height: 60px;
+    border-radius: 10px;
+    padding-left: 30px;
+}
+
+#Formulario button{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #00AB75;
+    border-color: #00AB75;
+    border-style: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+#mensagem{
+    position: relative;
+    left: 100px;
+}
+
+#Formulario form{
+   display: flex;
+}
+
+textarea{
+    height: 185px;
+    width: 550px;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+
+
+#Contato hr{
+    width: 90%;
+    margin-top: 20vh;
+}
+
+#rodapé{
+  
+    width: 100%;
+    height: 80px;
+    display: flex;
+    gap: 115vh;
+    align-items: center;
+}
+#btn6{
+    cursor: pointer;
+}
+
+
+
